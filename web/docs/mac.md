@@ -35,6 +35,7 @@ Si le Wifi n'arrete pas de débarquer et rembarquer, redémarrer le mac. Tu peux
 - Chercher le dossier Applications
 - Dedans demarrer l’application JetBrains Toolbox
 - Installer Android Studio et Intellij depuis toolbox
+- Assurez vous d'installer les plugins "Flutter" et "Dart" sur ces plateformes
 
 ## Simulateur
 
