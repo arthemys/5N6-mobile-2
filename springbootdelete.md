@@ -64,3 +64,32 @@ Appelez le prof pour votre revue:
 1. Commencer par une démo de la suppression. Essayez de penser à un court scenario qui démontre la suppression. Les différents cas, si j'essaie de supprimer un truc qui n'existe pas, un truc qui n'est pas à moi.
 2. Revue de code avec le prof. On va s'asseoir tous ensemble pour revoir le tout
 
+## Annexe appels de base / Postman
+
+/api/id/signup en POST
+```json
+{
+  "username" : "toplevelbackendmotherf****r",
+  "password" : "pipo"
+}
+```
+
+/api/id/signin en POST
+```json
+{
+  "username" : "toplevelbackendmotherf****r",
+  "password" : "pipo"
+}
+```
+
+/api/add en POST
+```json
+{
+  "name" : "test",
+  "deadline" : "2069-05-24T12:12:12"
+}
+```
+
+/api/home en GET
+
+
