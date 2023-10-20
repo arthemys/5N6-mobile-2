@@ -17,9 +17,13 @@ Ce qu'on va y gagner:
 ## Etape 1 : discussion sur "soft delete" et "hard delete"
 
 Chaque équipe doit décider entre les 2 approches:
-- soft delete : les tâches restent dans la BD, chaque tâche se retrouve avec un booléen actif ou non et l'application va juste toujours renvoyer seulement les actifs
+- **soft delete** : les tâches restent dans la BD, chaque tâche se retrouve avec un booléen actif ou non et l'application va juste toujours renvoyer seulement les actifs
+- **hard delete** : la tâche est réellement supprimée de la base de données. Pouf ... disparue
 
-
+Quelques questions pour partir la conversation:
+1. Est-ce qu'en tant qu'utilisateur, si vous supprimez une tâche vous êtes ok que l'entreprise la conserve? Imaginez une tâche avec une description sensible, un truc très personnel ou même avec un mot de passe dedans.
+2. Selon vous est-ce que c'est légal?
+3. Techniquement, qu'est-ce qui vous semble le plus simple? Niveau BD, service, DTO et client?
 
 ## Etape 2 : planification du sprint / découpage en tâches
 
@@ -50,5 +54,13 @@ Vous devez essayer de maximiser votre capacité à travailler en parallèle pour
 - BD: je peux implanter le code mais je n'ai rien pour le déclencher .... FAUX, tu peux utiliser un test unitaire pour rapidement créer ton repo et voir si ton code fonctionne.
 - Service : TODO
 
-Pour chaque tâche, faites un code review à 2 pour valider 
+TODO prof : s'assurer qu'on a un exemple de test unitaire qui permet de tester la BD sur lequel ils peuvent se baser.
+
+Pour chaque tâche, faites un code review à 2 pour valider quand c'est complété. Si le prof est dispo n'hésitez pas.
+
+## Etape 4 : revue / validation
+
+Appelez le prof pour votre revue:
+1. Commencer par une démo de la suppression. Essayez de penser à un court scenario qui démontre la suppression. Les différents cas, si j'essaie de supprimer un truc qui n'existe pas, un truc qui n'est pas à moi.
+2. Revue de code avec le prof. On va s'asseoir tous ensemble pour revoir le tout
 
