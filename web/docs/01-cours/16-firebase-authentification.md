@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance :
 
-Regardez la doc de [firebase authentication](https://firebase.google.com/docs/auth/flutter/start). Nous vous recommandons d'y passer un maximum de 20 minutes. Il vaut lire un peu, coder puis relire en profondeur que de lire de la doc 4 heures sans coder.
+Regardez la doc de [firebase authentication](https://firebase.google.com/docs/auth/flutter/start). Nous vous recommandons d'y passer un maximum de 20 minutes. Il faut lire un peu, coder puis relire en profondeur que de lire de la doc 4 heures sans coder.
 
 Dans le projet, nous allons utiliser la connexion avec des comptes Google. On va suivre les indications **[ici](notice-firebase-auth)**
 
