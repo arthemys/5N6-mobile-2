@@ -1,11 +1,13 @@
 ---
 slug: /
+hide_table_of_contents: true
 ---
+
+# Accueil
 
 <Row>
 
 <Column>
-
 
 Bienvenue au cours de 5N6 - Applications mobiles avancées ! Dans ce cours tu apprendras Dart pour créer des applications Flutter, automagiquement disponible sur Android et IOS (voire Web, Windows, MacOS, et Linux).
 
@@ -91,7 +93,3 @@ Notice pour deployer sur mac [ici](mac)
 | [14.2 →](cours/integration)             | Intégration                           | 100% remise        |
 | [15.1 →](cours/formatif-final)          | Formatif final                        |                    |
 | [15.2 →](cours/examen)                  | **Examen final**                      |                    |
-{:.chrono-table}
-
-
-
