@@ -60,7 +60,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "cours/rencontre1.1",
+            docId: "cours/intro",
             position: "left",
             label: "Cours",
           },
@@ -69,6 +69,23 @@ const config = {
             position: "left",
             sidebarId: "tp",
             label: "Travaux Pratiques",
+          },
+          {
+            type: "doc",
+            docId: "solution",
+            position: "right",
+            label: "Problèmes courants",
+          },
+          {
+            type: "doc",
+            docId: `mac`,
+            position: "right",
+            label: "Installation Mac",
+          },
+          {
+            label: "Scripts Installation",
+            href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
+            position: "right",
           },
         ],
       },
