@@ -42,7 +42,7 @@ L'ajout de la suppression va demander de faire des modifications aux niveaux sui
 - Client Réseau : ajouter au moins le nouvel appel pour suppression et modification si nécessaire
 - Client Interface : ajouter la possibilité de suppression une tâche quelque part dans l'application
 
-Chaque équipe va découper en tâches. **VALIDEZ VOS TACHES AVEC LE PROF**
+Chaque équipe va découper en tâches. **VALIDEZ VOS TÂCHES AVEC LE PROF**
 
 :::caution Attention!
 
@@ -54,7 +54,7 @@ Pour tester le tout, vous devrez soit utiliser Postman, soit l'intégrer à votr
 
 Vous devez essayer de maximiser votre capacité à travailler en parallèle pour ne pas perdre de temps. Voici quelques stratégies:
 
-- Commence en écrivant les noms des méthodes mais sans le code dans un commit fait à 2 :
+- Commence en écrivant les noms des méthodes mais sans le code dans un commit fait avec tout les membres de l'équipe :
   - Quel sera le nom de la méthode dans la BD
   - le nom de la méthode dans le service
   - le nom de la méthode controller avec l'URL et la méthode
@@ -76,33 +76,29 @@ Appelez le prof pour votre revue:
 
 ## Annexe appels de base / Postman
 
-/api/id/signup en POST
 
-```json
+
+```json title="POST /api/id/signup"
 {
-  "username" : "toplevelbackendmotherf****r",
+  "username" : "MrPipo",
   "password" : "pipo"
 }
 ```
 
-/api/id/signin en POST
-
-```json
+```json title="POST /api/id/signin"
 {
-  "username" : "toplevelbackendmotherf****r",
+  "username" : "MrPipo",
   "password" : "pipo"
 }
 ```
 
-/api/add en POST
-
-```json
+```json title="POST /api/add"
 {
   "name" : "test",
   "deadline" : "2069-05-24T12:12:12"
 }
 ```
 
-/api/home en GET
+```json title="GET /api/home"
 
-
+```
