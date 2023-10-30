@@ -128,13 +128,13 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.1 - Intégration",
-      id: "cours/integration",
+      label: "13.1 - Spring Boot",
+      id: "cours/springboot-delete",
     },
     {
       type: "doc",
-      label: "13.2 - Intégration",
-      id: "cours/integration",
+      label: "13.2 - Spring Boot",
+      id: "cours/springboot-delete",
       className: "remise-tp3",
     },
     {
