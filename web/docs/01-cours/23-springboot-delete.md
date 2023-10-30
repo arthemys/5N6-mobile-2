@@ -1,3 +1,9 @@
+---
+title: Spring Boot DELETE
+description: Spring Boot - Suppression de tâches
+hide_table_of_contents: false
+---
+
 # Supprimer les tâches
 
 Dans ces 2 périodes, vous allez implanter la suppression de tâches dans l'application ... par équipe de 2 (3 s'il reste un tout seul). 
