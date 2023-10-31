@@ -18,7 +18,7 @@ Mis à jour en nomvembre 2022
 
 ## Création du projet de code et repo
 
-- créer un nouveau repo pour le projet flutter sur Github, choisir un repo privé et respecter le nom demandé dans le cours.
+- Utiliser l'invitation ClassRoom pour créer votre repo du TP3
 - cloner ce nouveau repo sur la machine local (GitKraken ou autre)
 - dans un terminal (Powershell ou le terminal d'IntelliJ / AndroidStudio)
 - taper : flutter upgrade
@@ -31,12 +31,15 @@ Mis à jour en nomvembre 2022
 Faire des commits régulièrement va permettre de voir ce qui change dans le projet
 pour chaque étape et également de revenir à un point fonctionnel si une étape échoue.
 
-## Installation de firebase-cli
+## Installation de firebase-cli (déjà installé par le script, seulement à la maison)
 
 - suivre les instructions ici : https://firebase.google.com/docs/cli
+
+## Connexion à Firebase via le CLI
+
 - tester en exécutant dans le terminal : firebase login
 
-## Installation de flutterfire-cli
+## Installation de flutterfire-cli (déjà installé par le script, seulement à la maison)
 
 - dans un terminal (celui de IntellijIdea ou AndroidStudio par exemple)
 - taper : dart pub global activate flutterfire_cli
@@ -52,7 +55,7 @@ pour chaque étape et également de revenir à un point fonctionnel si une étap
 - FAIRE UN COMMIT et au passage regarder quels fichiers ont été configurés
 - FAIRE UN PUSH
 
-Ces étapes permettent de connecter l'application que tu développes avec le projet Firebase.
+Ces étapes permettent de connecter l'application que tu développes (localement) avec le projet Firebase (dans le nuage).
 
 ## Ajout des composants de firebase via les librairies
 
@@ -63,20 +66,16 @@ Vous allez maintenant ajouter plusieurs composantes de Firebase:
 
 - dans un terminal
 - depuis le dossier du projet flutter
-- taper : flutter pub add cloud_firestore
-- il s'agit de la "base de données" de firebase
-- taper : flutter pub add firebase_auth
-- pour gérer l'authentification
-- taper : flutter pub add firebase_storage
-- pour stocker des fichiers, pour nous les images
-- FINALEMENT, taper flutterfire configure
-- Cette dernière commande s'assure que tout est configuré ok.
+- taper : **flutter pub add cloud_firestore**, il s'agit de la "base de données" de firebase
+- taper : **flutter pub add firebase_auth** pour gérer l'authentification
+- taper : **flutter pub add firebase_storage** pour stocker des fichiers, pour nous les images
+- FINALEMENT, taper **flutterfire configure** pour s'assurer que tout est configuré correctement.
 - FAIRE UN COMMIT, encore une fois pour se donner un point de retour et voir ce qui s'est passé.
 - FAIRE UN PUSH
 
 ## Initialisation dans le projet test dans le code
 
-- dans le fichier main.dart du projet
+- dans le fichier main.dart du projet ou le fichier où vous avez la méthode **main**
 - on remplace l'ensemble de la fonction "void main() ... { ... }" par
 
 ```dart
