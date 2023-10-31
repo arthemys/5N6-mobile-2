@@ -20,10 +20,10 @@ Mis à jour en nomvembre 2022
 
 - Utiliser l'invitation ClassRoom pour créer votre repo du TP3
 - cloner ce nouveau repo sur la machine local (GitKraken ou autre)
+- créer un projet flutter de base dans le dossier local du repo
 - dans un terminal (Powershell ou le terminal d'IntelliJ / AndroidStudio)
 - taper : flutter upgrade
 - il s'agit de vous assurer d'avoir une version à jour de flutter pour le projet
-- créer un projet flutter de base dans le dossier local du repo
 - lancer votre application de base pour vérifier le fonctionnement
 - FAIRE UN COMMIT
 - FAIRE UN PUSH
