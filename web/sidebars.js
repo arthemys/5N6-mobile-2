@@ -135,16 +135,26 @@ const sidebars = {
       type: "doc",
       label: "13.2 - Spring Boot",
       id: "cours/springboot-delete",
+    },
+    {
+      type: "doc",
+      label: "14.1 - Intégration",
+      id: "cours/integration",
+    },
+    {
+      type: "doc",
+      label: "14.2 - Intégration",
+      id: "cours/integration",
       className: "remise-tp3",
     },
     {
       type: "doc",
-      label: "14.1 - Formatif",
+      label: "15.1 - Formatif",
       id: "cours/formatif-final",
     },
     {
       type: "doc",
-      label: "14.2 - Examen Final (20%)",
+      label: "15.2 - Examen Final (20%)",
       id: "cours/examen",
       className: "examen",
     },

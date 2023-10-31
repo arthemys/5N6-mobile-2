@@ -87,8 +87,8 @@ Notice pour deployer sur mac [ici](mac)
 | [11.2 →](cours/firebase-access-control) | Firebase contrôle d'accès             | 40%                |
 | [12.1 →](cours/firebase-storage)        | Firebase fichiers images              | 50%                |
 | [12.2 →](cours/firebase-stream)         | Firebase Stream                       | 60%                |
-| [13.1 →](cours/intro)                   | TBD                                   | 70%                |
-| [13.2 →](cours/intro)                   | TBD                                   | 80%                |
+| [13.1 →](cours/springboot-delete)                   | Spring Boot                           | 70%                |
+| [13.2 →](cours/springboot-delete)                   | Spring Boot                           | 80%                |
 | [14.1 →](cours/integration)             | Intégration                           | 90%                |
 | [14.2 →](cours/integration)             | Intégration                           | 100% remise        |
 | [15.1 →](cours/formatif-final)          | Formatif final                        |                    |

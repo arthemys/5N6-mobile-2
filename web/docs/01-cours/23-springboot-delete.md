@@ -11,17 +11,17 @@ Dans ces 2 périodes, vous allez implanter la suppression de tâches dans l'appl
 Ce qu'on va y gagner:
 
 - une initiation à Spring Boot
-- une pratique d'un mini Spring
+- une pratique d'un mini Sprint sur du Java backend
 - une réflexion sur la suppression et la "suppression" de données
 - l'utilisation de Github, des Issues pour planifier vos tâches
 
-## Etape 0 : Fork du projet et ajout du ou des coéquipiers
+:::danger Attention!
+VOUS DEVEZ FAIRE LE TOUT PENDANT LES 6 HEURES DE COURS EN CLASSE. 
+UTILISER LE TEMPS DE TRAVAIL A LA MAISON POUR COMPLETER VOTRE TP3
+:::
 
-1. Aller sur le repo du serveur : [https://github.com/departement-info-cem/KickMyB-Server](https://github.com/departement-info-cem/KickMyB-Server)
-2. Un des équipiers forke le projet dans son compte  : [https://docs.github.com/fr/get-started/quickstart/fork-a-repo](https://docs.github.com/fr/get-started/quickstart/fork-a-repo)
-3. Il ajoute son co-équipier comme contributor au repo : [https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects)
 
-## Etape 1 : Discussion sur "soft delete" et "hard delete"
+## Etape 0 : Discussion sur "soft delete" et "hard delete"
 
 Chaque équipe doit décider entre les 2 approches:
 
@@ -34,6 +34,13 @@ Quelques questions pour partir la conversation:
 2. Selon vous est-ce que c'est légal?
 3. Techniquement, qu'est-ce qui vous semble le plus simple? Niveau BD, service, DTO et client?
 
+## Etape 1 : Fork du projet et ajout du ou des coéquipiers
+
+1. Aller sur le repo du serveur : [https://github.com/departement-info-cem/KickMyB-Server](https://github.com/departement-info-cem/KickMyB-Server)
+2. Un des équipiers forke le projet dans son compte  : [https://docs.github.com/fr/get-started/quickstart/fork-a-repo](https://docs.github.com/fr/get-started/quickstart/fork-a-repo)
+3. Il ajoute son co-équipier comme contributor au repo : [https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects)
+
+
 ## Etape 2 : planification du sprint / découpage en tâches
 
 L'ajout de la suppression va demander de faire des modifications aux niveaux suivants:
@@ -44,15 +51,19 @@ L'ajout de la suppression va demander de faire des modifications aux niveaux sui
   - voir si les autres doivent être modifiées
 - Serveur Controller :
   - ajouter le point d'entrée pour la suppression, choisir l'URL, besoin de classes de transfert nouvelles (DTO)
-  - voir si les autres "/api/**" doivent être modifiés
-- Client Réseau : ajouter au moins le nouvel appel pour suppression et modification si nécessaire
-- Client Interface : ajouter la possibilité de suppression une tâche quelque part dans l'application
+  - voir si les autres <strong>"/api/**"</strong> doivent être modifiés
+- **INDIVIDUEL** : Client Réseau : ajouter au moins le nouvel appel pour suppression et modification si nécessaire
+- **INDIVIDUEL** : Client Interface : ajouter la possibilité de suppression une tâche quelque part dans l'application
 
 Chaque équipe va découper en tâches. **VALIDEZ VOS TÂCHES AVEC LE PROF**
 
 :::caution Attention!
 
-Pour tester le tout, vous devrez soit utiliser Postman, soit l'intégrer à votre TP2. Vous ne pouvez pas partager le code de votre TP entre vous.
+Pour tester le tout, vous devrez soit utiliser Postman, soit l'intégrer à votre TP2. 
+
+Si vous intégrez dans le TP2, vous devrez le faire chacun sur le vôtre.
+
+Vous ne pouvez pas partager le code de votre TP entre vous.
 
 :::
 
@@ -67,18 +78,22 @@ Vous devez essayer de maximiser votre capacité à travailler en parallèle pour
   - etc.
 - Contrôleur : je peux implanter un point d'entrée, valider son comportement avec POSTMAN, est-ce qu'il se déclenche, commenter l'appel à la méthode de service mais vérifier le reste
 - BD : je peux implanter le code mais je n'ai rien pour le déclencher .... FAUX, tu peux utiliser un test unitaire pour rapidement créer ton repo et voir si ton code fonctionne.
-- Service : TODO
+- Service : je peux tester la logique de ma fonction avec un mock de la BD
 
 TODO prof : s'assurer qu'on a un exemple de test unitaire qui permet de tester la BD sur lequel ils peuvent se baser.
+TODO prof : s'assurer qu'on a un test avec un mock de la BD
 
 Pour chaque tâche, faites un code review à 2 pour valider quand c'est complété. Si le prof est dispo n'hésitez pas.
+
+Ne négligez pas le test de votre code. Quand vous nous dites que c'est fini, ça signifie que vous pensez que ça part en production.
 
 ## Etape 4 : revue / validation
 
 Appelez le prof pour votre revue:
 
 1. Commencer par une démo de la suppression. Essayez de penser à un court scenario qui démontre la suppression. Les différents cas, si j'essaie de supprimer un truc qui n'existe pas, un truc qui n'est pas à moi.
-2. Revue de code avec le prof. On va s'asseoir tous ensemble pour revoir le tout.
+2. Vous pouvez faire toute la présentation soit avec Postman soit avec votre TP2 modifié
+3. Revue de code avec le prof. On va s'asseoir tous ensemble pour revoir le tout.
 
 ## Annexe appels de base / Postman
 
