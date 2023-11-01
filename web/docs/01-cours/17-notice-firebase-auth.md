@@ -93,10 +93,11 @@ Future<UserCredential> signInWithGoogle() async {
 
 ### Configuration google_sign_in pour ios
 
-- TODO add dans Xcode
-- ouvrir le fichier ios > Runner > Info.plist
-- à la fin du fichier ajouter quelques lignes vides juste au dessus de `</dict>`
-- dans l'espace vide ajoutez le code suivant en remplaçant gnagnagna par la valeur sous "REVERSED_CLIENT_ID" dans le fichier ios > Runner > GoogleService-Info.plist
+- Dans la console Firebase sélectionner l'application Android de votre projet, cliquer sur l'engrenage
+- Téléchargez `GoogleService-Info.plist`
+- Mettez le fichier téléchargé dans votre projet Flutter sous `ios/Runner`. S'il existe déjà, remplacez le.
+- À la fin du fichier ajouter quelques lignes vides juste au dessus de `</dict>`
+- Dans l'espace vide ajoutez le code suivant en remplaçant gnagnagna par la valeur sous "REVERSED_CLIENT_ID" dans le fichier `ios/Runner/GoogleService-Info.plist`
 
 ```xml
 <key>CFBundleURLTypes</key>
@@ -114,8 +115,13 @@ Future<UserCredential> signInWithGoogle() async {
     </array>
 ```
 
-- lancer votre application sur un simulateur IOS ou un appareil IOS sur un mac
-- si vous arrivez à vous connectez
+- Ouvrez votre application avec xcode (comme lorsqu'on déployait sur iPhone) :
+  - Dans Android Studio,
+  - Clique droit sur le dossier `ios`, Flutter > Open iOS/macOS module ix Xcode
+- Clique droit sur `Runner (icône du AppStore)/Runner (icône de dossier)`, "Add file to Runner"
+- Sélectionnez le fichier `ios/Runner/GoogleService-Info.plist` que vous avez copié plus tôt
+- Lancez votre application sur un simulateur IOS ou un appareil IOS sur un mac
+- Si vous arrivez à vous connectez
 - COMMIT PUSH
 
 ## Ajout d'un signout
