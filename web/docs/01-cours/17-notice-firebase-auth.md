@@ -11,6 +11,14 @@ Si ce n'est pas déjà fait (il faut regarder dans le pubspec pour voir s'il y a
 - taper : flutter pub add firebase_auth
 - COMMIT PUSH
 
+## activation de l'authentification dans la console de firebase + signin par Google
+
+- Dans la console firebase dans un navigateur https://console.firebase.google.com/
+- Sélectionne ton projet
+- Dans le panneau de nav à gauche, choisis Créer puis Authentication
+- Si ce n'est pas déjà fait, active l'authentication
+- Dans l'onglet "sign-in methods", active Google (on devrait de demander un courriel pour confirmer)
+
 ## Code de détection du status de login
 
 - dans votre IDE
