@@ -97,8 +97,8 @@ Future<UserCredential> signInWithGoogle() async {
 - Dans la console Firebase sélectionner l'application IOS de votre projet, cliquer sur l'engrenage
 - Téléchargez `GoogleService-Info.plist`
 - Mettez le fichier téléchargé dans votre projet Flutter sous `ios/Runner`. S'il existe déjà, remplacez le.
-- À la fin du fichier Info.plist (dans le dossier ios/Runner/) ajouter quelques lignes vides juste au dessus de `</dict>`
-- Dans l'espace vide (dans Info.plist) ajoutez le code suivant en remplaçant gnagnagna par la valeur sous "REVERSED_CLIENT_ID" dans le fichier `ios/Runner/GoogleService-Info.plist`
+- À la fin du fichier `Info.plist` (dans le dossier ios/Runner/) ajouter quelques lignes vides juste au dessus de `</dict>`
+- Dans l'espace vide dans `Info.plist` ajoutez le code suivant en remplaçant **gnagnagna** par la valeur sous "REVERSED_CLIENT_ID" dans le fichier `ios/Runner/GoogleService-Info.plist`
 
 ```xml
 <key>CFBundleURLTypes</key>
