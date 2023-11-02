@@ -21,6 +21,7 @@ Si ce n'est pas déjà fait (il faut regarder dans le pubspec pour voir s'il y a
 ```dart
 @override
 void initState() {
+  super.initState();
   FirebaseAuth.instance
     .authStateChanges()
     .listen((User? user) {
