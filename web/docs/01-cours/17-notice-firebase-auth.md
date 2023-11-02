@@ -97,8 +97,8 @@ Future<UserCredential> signInWithGoogle() async {
 - Dans la console Firebase sélectionner l'application IOS de votre projet, cliquer sur l'engrenage
 - Téléchargez `GoogleService-Info.plist`
 - Mettez le fichier téléchargé dans votre projet Flutter sous `ios/Runner`. S'il existe déjà, remplacez le.
-- À la fin du fichier ajouter quelques lignes vides juste au dessus de `</dict>`
-- Dans l'espace vide ajoutez le code suivant en remplaçant gnagnagna par la valeur sous "REVERSED_CLIENT_ID" dans le fichier `ios/Runner/GoogleService-Info.plist`
+- À la fin du fichier Info.plist (dans le dossier ios/Runner/) ajouter quelques lignes vides juste au dessus de `</dict>`
+- Dans l'espace vide (dans Info.plist) ajoutez le code suivant en remplaçant gnagnagna par la valeur sous "REVERSED_CLIENT_ID" dans le fichier `ios/Runner/GoogleService-Info.plist`
 
 ```xml
 <key>CFBundleURLTypes</key>
@@ -116,11 +116,11 @@ Future<UserCredential> signInWithGoogle() async {
     </array>
 ```
 
-- Ouvrez votre application avec xcode (comme lorsqu'on déployait sur iPhone) :
+- Ouvrez votre application avec Xcode (comme lorsqu'on déployait sur iPhone) :
   - Dans Android Studio,
   - Clique droit sur le dossier `ios`, Flutter > Open iOS/macOS module ix Xcode
 - Clique droit sur `Runner (icône du AppStore)/Runner (icône de dossier)`, "Add file to Runner"
-- Sélectionnez le fichier `ios/Runner/GoogleService-Info.plist` que vous avez copié plus tôt
+- Sélectionnez le fichier `ios/Runner/GoogleService-Info.plist` que vous avez copié plus tôt, et cocher "Copy items if needed"
 - Lancez votre application sur un simulateur IOS ou un appareil IOS sur un mac
 - Si vous arrivez à vous connectez
 - COMMIT PUSH
