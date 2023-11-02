@@ -80,20 +80,20 @@ Future<UserCredential> signInWithGoogle() async {
 - SHA1 : pour le sign in Google, il faut ajouter la signature SHA1 de l'application dans notre application Android
 - SHA1 : avec Android Studio, fermer votre projet Flutter, ouvrir comme un projet le dossier android DANS le projet flutter, en sélectionnant le dossier "android" dans le dialogue d'ouverture de projet
 - SHA1 : ouvrir le menu suivant : view -> tool windows -> gradle
-- SHA1 : dans la vue gradle, cliquer sur l'éléphant
+- SHA1 : dans la vue gradle, cliquer sur le bouton suivant ![boutongradle](https://github.com/departement-info-cem/5N6-mobile-2/assets/372085/2ef2b0bb-647e-4641-a0cc-4f586c56d30b)
 - SHA1 : taper : gradle signinReport dans le dialogue qui apparait
 - copier la valeur du SHA1 de la tache google_sign_in_android
-- fermer le projet Android et re-ouvrir le projet Flutter
 - dans un navigateur
-- dans la console firebase sélectionner l'application Android de votre projet, cliquer sur l'engrenage
+- dans la console firebase sélectionner l'application Android de votre projet, cliquer dessus puis cliquer sur l'engrenage
 - trouver le bouton "ajouter une empreinte"
 - copier la valeur du SHA1 et valider
+- re-ouvrir le projet Flutter
 - relancer l'application et tenter une connexion, tout devrait fonctionner.
 - COMMIT PUSH
 
 ### Configuration google_sign_in pour ios
 
-- Dans la console Firebase sélectionner l'application Android de votre projet, cliquer sur l'engrenage
+- Dans la console Firebase sélectionner l'application IOS de votre projet, cliquer sur l'engrenage
 - Téléchargez `GoogleService-Info.plist`
 - Mettez le fichier téléchargé dans votre projet Flutter sous `ios/Runner`. S'il existe déjà, remplacez le.
 - À la fin du fichier ajouter quelques lignes vides juste au dessus de `</dict>`
