@@ -22,7 +22,8 @@ class Pipo {
       "pipi": pipi,
       "popo": popo,
       "popi": popi,
-      "creationtime": creationtime,
+      // permet de récupérer le temps serveur indépendant du client
+      "creationtime": FieldValue.serverTimestamp(),
     };
   }
 

@@ -1,5 +1,5 @@
+import 'dart:math';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firestore_typed/model/pipo.dart';
 import 'package:firestore_typed/service.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +21,11 @@ class _MaisonPageState extends State<MaisonPage> {
     setState(() {});
   }
 
+  void chargerListeSous50() async {
+    this.liste = await piposSous50();
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
 
@@ -29,6 +34,16 @@ class _MaisonPageState extends State<MaisonPage> {
         backgroundColor: Colors.deepOrange[500],
         title: const Text("Firestore Mama!!"),
         actions: <Widget>[
+          TextButton(
+            child: Text(
+              "<50",
+              style: TextStyle(color: Colors.white),
+            ),
+            onPressed: () {
+              chargerListeSous50();
+              // do something
+            },
+          ),
           IconButton(
             icon: Icon(
               Icons.refresh,
@@ -67,7 +82,7 @@ class _MaisonPageState extends State<MaisonPage> {
           Pipo pipo = Pipo();
           pipo.pipi = "coucou";
           pipo.popo = DateTime.now().add(const Duration(days: 7));
-          pipo.popi = 999;
+          pipo.popi = Random().nextInt(100);
           await ajoutPipo(pipo);
         },
         tooltip: 'Increment',

@@ -22,13 +22,20 @@ Future<void> ajoutPipo(Pipo pipo) async {
   return;
 }
 
+Future<List<Pipo>> piposSous50() async {
+  QuerySnapshot<Pipo> requete = await collectionRef
+      .where("popi", isLessThanOrEqualTo: 50)
+      .get();
+  return _convertirRequeteEnListe(requete);
+}
+
 Future<List<Pipo>> piposCommeUneListe() async {
-  Pipo pipo = Pipo();
-  pipo.pipi = "coucou";
-  pipo.popo = DateTime.now().add(const Duration(days: 7));
-  pipo.popi = 99^99;
-  pipo.creationtime = Timestamp.now();
   QuerySnapshot<Pipo> requete = await collectionRef.get();
+  return _convertirRequeteEnListe(requete);
+}
+
+// methode privée pour convertir de snapshot en bon vieux objets
+List<Pipo> _convertirRequeteEnListe(QuerySnapshot<Pipo> requete) {
   List<Pipo> resultat = [];
   for (QueryDocumentSnapshot<Pipo> element in requete.docs) {
     resultat.add(element.data());
