@@ -56,26 +56,40 @@ class _MaisonPageState extends State<MaisonPage> {
           )
         ],
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
+      body: Column(
 
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Expanded(
-                child: ListView(
-                  children: this.liste.map(
-                      convertisseurDePipo
-                  ).toList() ,
-                )
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Expanded(
+              child: ListView(
+                children: this.liste.map(
+                    convertisseurDePipo
+                ).toList() ,
+              )
+          ),
+
+          Expanded(
+              child: StreamBuilder<List<Pipo>>(
+                stream: piposCommeUnStream(),
+                builder: (BuildContext context, AsyncSnapshot<List<Pipo>> snapshot) {
+                  if (snapshot.hasError) {
+                    return const Text('Something went wrong');
+                  }
+
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Text("Loading");
+                  }
+
+                  return ListView(
+                    children: snapshot.data!
+                        .map( convertisseurDePipo )
+                        .toList(),
+                  );
+                },
+              )
+          ),
+
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {

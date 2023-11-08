@@ -34,6 +34,12 @@ Future<List<Pipo>> piposCommeUneListe() async {
   return _convertirRequeteEnListe(requete);
 }
 
+Stream<List<Pipo>> piposCommeUnStream() {
+  Stream<List<Pipo>> flot = collectionRef.snapshots().map(
+          (QuerySnapshot<Pipo> snappy) => _convertirRequeteEnListe(snappy));
+  return flot;
+}
+
 // methode privée pour convertir de snapshot en bon vieux objets
 List<Pipo> _convertirRequeteEnListe(QuerySnapshot<Pipo> requete) {
   List<Pipo> resultat = [];
