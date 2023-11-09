@@ -36,7 +36,7 @@ Nous allons discuter de comment rattacher les données à l'utilisateur :
 
 Nous regarderons la démo [FireStore typé](https://github.com/departement-info-cem/5N6-mobile-2/tree/main/code/firestore_typed):
 - Accès typés au firestore
-- Récupération du server time à la création d'un objet [https://stackoverflow.com/questions/50632217/converting-timestamp](https://stackoverflow.com/questions/50632217/converting-timestamp)
+- Récupération du server time à la création d'un objet 
 - Accès unique aux données ou accès via un Stream
 
 :::
