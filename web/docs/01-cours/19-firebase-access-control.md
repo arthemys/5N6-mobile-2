@@ -26,15 +26,18 @@ Videos à regarder:
 
 :::info Séance :
 
-Nous allons discuter de comment rattacher les données à l'utilisateur même si le compte de connexion n'est pas dans les données de l'application
+Quel identifiant pour l'utilisateur:
+- courriel?
+- ID fourni par FireBase ?
 
-quel identifiant pour l'utilisateur, courriel, ID fourni par FireBase ?
-Créer un compte dans le datastore qui utilise un identifiant de l'utilisateur
-uniquement inclure l'identifiant dans les objets stockés dans le datastore
+Nous allons discuter de comment rattacher les données à l'utilisateur :
+- Créer un compte dans le firestore qui utilise l'identifiant de l'utilisateur authentifié
+- Inclure l'identifiant de l'utilisateur dans les objets stockés (comme un champ) 
 
-Nous discuterons des avantages de typer nos documents lors des différentes opérations avec la BD.
-
-Pour voir comment récupérer le temps du serveur en Timestamp: [https://stackoverflow.com/questions/50632217/converting-timestamp](https://stackoverflow.com/questions/50632217/converting-timestamp) ServerValue.timestamp ou faire confiance au temps du client firebase.database.ServerValue.TIMESTAMP
+Nous regarderons la démo [FireStore typé](https://github.com/departement-info-cem/5N6-mobile-2/tree/main/code/firestore_typed):
+- Accès typés au firestore
+- Récupération du server time à la création d'un objet [https://stackoverflow.com/questions/50632217/converting-timestamp](https://stackoverflow.com/questions/50632217/converting-timestamp)
+- Accès unique aux données ou accès via un Stream
 
 :::
 
