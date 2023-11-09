@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:firestore_typed/model/pipo.dart';
+import 'package:firestore_typed/nav/tiroir_nav.dart';
+import 'package:firestore_typed/pages/utils.dart';
 import 'package:firestore_typed/service.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +14,14 @@ class MaisonPage extends StatefulWidget {
 }
 
 class _MaisonPageState extends State<MaisonPage> {
-  final int _counter = 0;
 
   List<Pipo> liste = [];
+
+  @override
+  void initState() {
+    super.initState();
+    chargerListe();
+  }
 
   void chargerListe() async {
     this.liste = await piposCommeUneListe();
@@ -41,7 +48,6 @@ class _MaisonPageState extends State<MaisonPage> {
             ),
             onPressed: () {
               chargerListeSous50();
-              // do something
             },
           ),
           IconButton(
@@ -51,45 +57,15 @@ class _MaisonPageState extends State<MaisonPage> {
             ),
             onPressed: () {
               chargerListe();
-              // do something
             },
           )
         ],
       ),
-      body: Column(
-
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Expanded(
-              child: ListView(
-                children: this.liste.map(
-                    convertisseurDePipo
-                ).toList() ,
-              )
-          ),
-
-          Expanded(
-              child: StreamBuilder<List<Pipo>>(
-                stream: piposCommeUnStream(),
-                builder: (BuildContext context, AsyncSnapshot<List<Pipo>> snapshot) {
-                  if (snapshot.hasError) {
-                    return const Text('Something went wrong');
-                  }
-
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Text("Loading");
-                  }
-
-                  return ListView(
-                    children: snapshot.data!
-                        .map( convertisseurDePipo )
-                        .toList(),
-                  );
-                },
-              )
-          ),
-
-        ],
+      drawer: LeTiroir(),
+      body: ListView(
+        children: this.liste.map(
+            convertisseurDePipo
+        ).toList() ,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
@@ -101,16 +77,8 @@ class _MaisonPageState extends State<MaisonPage> {
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 
-  Widget convertisseurDePipo(Pipo pipo) {
-      return ListTile(
-        leading: Text(pipo.id),
-        trailing: Text(pipo.popi.toString()),
-        title: Text(pipo.pipi),
-        subtitle: Text(pipo.creationtime.millisecondsSinceEpoch.toString()),
-      );
-  }
 }
