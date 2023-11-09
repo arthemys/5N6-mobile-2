@@ -71,7 +71,7 @@ class _MaisonPageState extends State<MaisonPage> {
         onPressed: () async {
           Pipo pipo = Pipo();
           pipo.pipi = "coucou";
-          pipo.popo = DateTime.now().add(const Duration(days: 7));
+          pipo.popo = DateTime.now();
           pipo.popi = Random().nextInt(100);
           await ajoutPipo(pipo);
         },

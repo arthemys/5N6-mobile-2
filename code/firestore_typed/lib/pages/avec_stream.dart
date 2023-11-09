@@ -35,7 +35,8 @@ class _MaisonPageState extends State<MaisonStreamPage> {
         stream: monStream,
         builder: (BuildContext context, AsyncSnapshot<List<Pipo>> snapshot) {
           if (snapshot.hasError) {
-            return const Text('Something went wrong');
+            print(snapshot.error.toString());
+            return const Text('Reloading');
           }
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Text("Loading");
@@ -51,7 +52,7 @@ class _MaisonPageState extends State<MaisonStreamPage> {
         onPressed: () async {
           Pipo pipo = Pipo();
           pipo.pipi = "Depuis le stream";
-          pipo.popo = DateTime.now().add(const Duration(days: 999));
+          pipo.popo = DateTime.now();
           pipo.popi = Random().nextInt(100);
           await ajoutPipo(pipo);
         },
