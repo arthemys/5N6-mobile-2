@@ -89,6 +89,13 @@ void main() async {
 ```
 
 - partir le projet depuis le terminal dans le dossier du projet : flutter run
+
+:::danger Attention!
+
+Il faut vraiment faire un `flutter run`. Lancer l'application dans l'interface d'Android Studio ne fonctionnera pas.
+
+:::
+
 - si vous avez un message d'erreur sur minSdk, il faut aller changer la valeur dans le fichier android>app>build.gradle
 - il va vous proposer d'activer multidex, dites oui
 - lancer l'application depuis votre IDE
