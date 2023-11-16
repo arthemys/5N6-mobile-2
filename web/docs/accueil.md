@@ -9,13 +9,13 @@ hide_table_of_contents: true
 
 <Column>
 
-Bienvenue au cours de 5N6 - Applications mobiles avancées ! Dans ce cours tu apprendras Dart pour créer des applications Flutter, automagiquement disponible sur Android et IOS (voire Web, Windows, MacOS, et Linux).
+Bienvenue au cours de 5N6 - Applications mobiles avancées! Dans ce cours, tu apprendras Dart pour créer des applications Flutter, automagiquement disponible sur Android et IOS (voire Web, Windows, MacOS, et Linux).
 
-Le contenu des cours ainsi que les énoncées de TP sont disponibles dans les onglets **[Cours](cours/intro)** et **[Travaux Pratiques](tp/tp1)**.
+Le contenu des cours ainsi que les énoncés de TP sont disponibles dans les onglets **[Cours](cours/intro)** et **[Travaux Pratiques](tp/tp1)**.
 
 Tu peux déjà commencer à regarder les vidéos du cours 1 et prendre connaissance des informations.
 
-A chaque cours, exécutes ce **[script](https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1)** d'installation ([repo](https://github.com/departement-info-cem/scripts-mobile)). Pour le moment, le script est fait pour être uniquement exécuté sur les postes du CÉGEP.
+À chaque cours, exécute ce **[script](https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1)** d'installation ([repo](https://github.com/departement-info-cem/scripts-mobile)). Pour le moment, le script est fait pour être uniquement exécuté sur les postes du CÉGEP.
 
 
 </Column>
@@ -33,7 +33,7 @@ Lis les règles concernant le plagiat et les sanctions **[ici](https://info.cege
 
 :::tip Déroulement d'une semaine type
 
-Tu as du travail préparatoire pour découvrir la matière par toi-même (page web à lire, video, exercices) pour environ 2 heures de travail.
+Tu as du travail préparatoire pour découvrir la matière par toi-même (page Web à lire, vidéo, exercices) pour environ 2 heures de travail.
 
 Pendant la séance, tu dois compléter et valider tes exercices, poser des questions et compléter ton TP.
 
@@ -45,7 +45,7 @@ Pendant la séance, tu dois compléter et valider tes exercices, poser des quest
 
 Problèmes courants et solutions [ici](solutions)
 Le repo git du cours [ici](https://github.com/departement-info-cem/5N6-mobile-2)
-Notice pour deployer sur mac [ici](mac)
+Notice pour déployer sur Mac [ici](mac)
 
 :::
 
@@ -63,7 +63,7 @@ Notice pour deployer sur mac [ici](mac)
 
 | Semaine                                   | Séquence des cours                    | Travaux pratiques  |
 |-------------------------------------------|---------------------------------------|--------------------|
-| [1.1 →](cours/intro)                      | Plan de cours, premier projet flutter | --                 |
+| [1.1 →](cours/intro)                      | Plan de cours, premier projet Flutter | --                 |
 | [1.2 →](cours/layout)                     | Mise en page                          | --                 |
 | [2.1 →](cours/navigation)                 | Navigation                            | Projet créé        |
 | [2.2 →](cours/liste)                      | Liste                                 | 10%                |
@@ -80,7 +80,7 @@ Notice pour deployer sur mac [ici](mac)
 | [8.1 →](cours/image-serveur)              | Image serveur                         | 60%                |
 | [8.2 →](cours/image-client)               | Image client                          | 80%                |
 | [9.1 →](cours/integration)                | Intégration                           | 100% remise        |
-| [9.2 →](cours/firebase-intro)             | Intro firebase                        | TP3 : sans serveur |
+| [9.2 →](cours/firebase-intro)             | Intro Firebase                        | TP3 : sans serveur |
 | [10.1 →](cours/firebase-authentification) | Firebase authentification             | 10%                |
 | [10.2 →](cours/firebase-datastore)        | Firebase datastore                    | 20%                |
 | [11.1 →](cours/firebase-access-control) | Firebase contrôle d'accès             | 30%                |
