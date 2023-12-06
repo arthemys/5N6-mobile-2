@@ -4,7 +4,7 @@ slug: /solutions
 
 # Solutions
 
-## J'ai besoin d'aide pour installer...
+## J'ai besoin d'aide pour installer des trucs à la maison...
 
 - [Amazon Corretto](https://youtu.be/b7MgJDd1Iks)
 - [IntelliJ Idea](https://youtu.be/aWd160BjRYE)
@@ -79,7 +79,7 @@ Dans de Gestionnaire des tâches (CTRL + SHIFT + ESCAPE), dans l’onglet Détai
 
 Redémarrer la machine de développement
 
-## IOS
+## Mac
 
 ### Mon projet part sur PC mais pas sur MacOS sur un simulateur IOS
 
@@ -94,11 +94,22 @@ Dans le fichier ios/Flutter/AppFrameworkInfo.plist, tu devrais avoir
 
 ```
 MinimumOSVersion
-  10.0
+  11.0
 ```
 
 ### "Error output from CocoaPods"
 
+Il faut sans doute mettre à jours cocoapods pour la machine. Tape la commande "sudo gem install cocoapods"
+
+### "failed to write" le fichier **.last_build_id**
+1.  Ouvrir le projet IOS dans Xcode.
+2.	Clic sur le nom du projet dans l'explorateur à gauche pour accéder aux réglages du projet.
+3.	Sélectionne la bon target dans la section "Targets".
+4.	Choisir l'onglet "Build Settings"
+5.	Dans le champ de recherche tape "ENABLE_USER_SCRIPT_SANDBOXING".
+6.	S'assurer que ﻿ENABLE_USER_SCRIPT_SANDBOXING est à "No".
+
+
 ### "Automatically assigning platform `iOS` with version `9.0` on target `Runner` because no platform was specified"
 
-Verifie le fichier ios/Podfile. La 2ème ligne devrait être décommentée et dire `platform :ios, '10.0'`
+Verifie le fichier ios/Podfile. La 2ème ligne devrait être décommentée et dire `platform :ios, '11.0'`
