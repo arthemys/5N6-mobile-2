@@ -53,13 +53,6 @@ Notice pour déployer sur Mac [ici](mac)
 </Column>
 
 </Row>
-<style>
-
-.markdown-table td {
-    padding: 1px;
-}
-
-</style>
 
 | Semaine                                   | Séquence des cours                    | Travaux pratiques  |
 |-------------------------------------------|---------------------------------------|--------------------|

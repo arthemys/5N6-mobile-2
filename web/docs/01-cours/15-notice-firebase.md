@@ -76,7 +76,7 @@ Vous allez maintenant ajouter plusieurs composantes de Firebase:
 ## Initialisation dans le projet test dans le code
 
 - dans le fichier main.dart du projet ou le fichier où vous avez la méthode **main**
-- on remplace l'ensemble de la fonction "void main() ... { ... }" par
+- on remplace l'ensemble de la fonction "void main() ... \{ ... \}" par
 
 ```dart
 void main() async {
