@@ -12,6 +12,8 @@ hide_table_of_contents: true
 
 :::tip Avant la séance : théorie (2h)
 
+ATTENTION: Tous les liens vers le site 4n6.azure... ne marchent plus, remplacer par https://fourn6-mobile-prof.onrender.com/
+
 Vous devez regarder les videos suivantes:
 
 <Video url="https://youtu.be/ZPbeMhcKITE" />
@@ -68,7 +70,7 @@ Vous finirez vos exercices si nécessaire et vous avancerez les appels HTTP et c
 
 ### Exercice http_simple
 
-Vous trouverez à l'url [https://4n6.azurewebsites.net/exos/long/double/4](https://4n6.azurewebsites.net/exos/long/double/4) un web service qui double la valeur du nombre qu'on lui passe.
+Vous trouverez à l'url [https://fourn6-mobile-prof.onrender.com/exos/long/double/4](https://fourn6-mobile-prof.onrender.com/exos/long/double/4) un web service qui double la valeur du nombre qu'on lui passe.
 
 Tu dois démontrer un appel avec succès à ce web service dans une application Flutter en envoyant la valeur d'un nombre et en affichant son double dans l'interface.
 
