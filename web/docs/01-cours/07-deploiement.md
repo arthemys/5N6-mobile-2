@@ -33,9 +33,9 @@ Ce n'est pas nécessaire d'avoir un compte développeur, un compte Apple gratuit
 
 :::info Séance : Déploiement
 
-Vous tenterez de déployer votre TP sur un appareil IOS.
-
 Vous tenterez de déployer votre TP sur le Play Store Android (voir TP2).
+
+FACULTATIF : Vous tenterez de déployer votre TP sur un appareil IOS.
 
 :::
 
