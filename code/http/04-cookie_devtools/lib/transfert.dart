@@ -7,6 +7,8 @@ part 'transfert.g.dart';
 
 /// An annotation for the code generator to know that this class needs the
 /// JSON serialization logic to be generated.
+///
+/// La commande pour
 @JsonSerializable()
 class Truc {
   Truc();

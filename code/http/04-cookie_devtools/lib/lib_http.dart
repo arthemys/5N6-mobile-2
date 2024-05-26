@@ -16,7 +16,7 @@ class SingletonDio {
 
 Future<String> cookieDemo() async {
   var response = await SingletonDio.getDio()
-      .get('http://exercices-web.herokuapp.com/exos/cookie/echo');
+      .get('https://fourn6-mobile-prof.onrender.com/exos/cookie/echo');
   print(response);
   return response.data;
 }
@@ -24,7 +24,7 @@ Future<String> cookieDemo() async {
 Future<SignupResponse> signup(SignupRequest req) async {
   try {
     var response = await SingletonDio.getDio()
-        .post('https://kickmyb-server.herokuapp.com/api/id/signup', data: req);
+        .post('https://kickmyb-server.onrender.com/api/id/signup', data: req);
     print(response);
     return SignupResponse.fromJson(response.data);
   } catch (e) {
@@ -36,7 +36,7 @@ Future<SignupResponse> signup(SignupRequest req) async {
 Future<Truc> httpComplex(String nom) async {
   try {
     var response = await SingletonDio.getDio()
-        .get('https://4n6.azurewebsites.net/exos/truc/complexe?name=$nom');
+        .get('https://fourn6-mobile-prof.onrender.com/exos/truc/complexe?name=$nom');
     print(response);
     return Truc.fromJson(response.data);
   } catch (e) {
