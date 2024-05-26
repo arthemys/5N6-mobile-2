@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void getHttp() async {
     try {
       var response =
-          await Dio().get('https://4n6.azurewebsites.net/exos/long/double/99');
+          await Dio().get('https://fourn6-mobile-prof.onrender.com/exos/long/double/99');
       print(response);
       reponse = response.data;
       setState(() {});

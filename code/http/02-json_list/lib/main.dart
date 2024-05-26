@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void getHttp() async {
     try {
       var response =
-          await Dio().get('https://4n6.azurewebsites.net/exos/long/double/99');
+          await Dio().get('https://fourn6-mobile-prof.onrender.com/exos/long/double/99');
       print(response);
       this.reponse = response.data;
       setState(() {});
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void getHttpComplex(String nom) async {
     try {
       var response = await Dio()
-          .get('https://4n6.azurewebsites.net/exos/truc/complexe?name=$nom');
+          .get('https://fourn6-mobile-prof.onrender.com/exos/truc/complexe?name=$nom');
       print(response);
       truc = Truc.fromJson(response.data);
       setState(() {});
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void getHttpListComplex() async {
     try {
       var response =
-          await Dio().get('https://4n6.azurewebsites.net/exos/truc/list');
+          await Dio().get('https://fourn6-mobile-prof.onrender.com/exos/truc/list');
       print(response);
       var listeJSON = response.data as List;
       var listeTruc = listeJSON.map((elementJSON) {
