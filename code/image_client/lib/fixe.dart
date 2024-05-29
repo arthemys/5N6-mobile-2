@@ -33,24 +33,19 @@ class _FixePageState extends State<FixePage> {
               // il suffit de spécifier au serveur la taille d'image désirée
               // Soit la taille du contrôle
               Image.network(
-                "https://4n6.azurewebsites.net/exos/image?width=100",
+                "https://fourn6-mobile-prof.onrender.com/exos/image?width=10",
+                width: 10,
+              ),
+              Image.network(
+                "https://fourn6-mobile-prof.onrender.com/exos/image?width=50",
+                width: 50,
+              ),
+              Image.network(
+                "https://fourn6-mobile-prof.onrender.com/exos/image?width=100",
                 width: 100,
               ),
               Image.network(
-                "https://4n6.azurewebsites.net/exos/image?width=150",
-                width: 150,
-              ),
-              Image.network(
-                "https://4n6.azurewebsites.net/exos/image?width=200",
-                width: 200,
-              ),
-              Image.network(
-                "https://4n6.azurewebsites.net/exos/image?width=300",
-                width: 300,
-              ),
-              Image.network(
-                "https://4n6.azurewebsites.net/exos/image?width=400",
-                width: 400,
+                "https://fourn6-mobile-prof.onrender.com/exos/image",
               ),
             ]),
           ),

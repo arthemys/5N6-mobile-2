@@ -50,7 +50,7 @@ class _DynamiquePageState extends State<DynamiquePage> {
 
                       //TODO Une fois la taille connue, il suffit de la spécifier dans l'URL
                       return Image.network(
-                        "https://4n6.azurewebsites.net/exos/image?&width=$width",
+                        "https://fourn6-mobile-prof.onrender.com/exos/image?&width=$width",
                         width: size.width,
                       );
                     }),
@@ -68,7 +68,7 @@ class _DynamiquePageState extends State<DynamiquePage> {
                       String width = size.width.toInt().toString();
 
                       return Image.network(
-                        "https://4n6.azurewebsites.net/exos/image?&width=$width",
+                        "https://fourn6-mobile-prof.onrender.com/exos/image?&width=$width",
                         width: size.width,
                       );
                     }),
