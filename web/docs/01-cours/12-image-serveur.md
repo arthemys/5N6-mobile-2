@@ -13,7 +13,7 @@ hide_table_of_contents: true
 :::tip
 
 Visite guidée de code
-Vous devez regarder le code du serveur utilisé pendant le cours et en particulier le package org.kickmyb.server.photo **[branche Images](https://github.com/departement-info-cem/KickMyB-Server/tree/main)**.
+Vous devez regarder le code du serveur utilisé pendant le cours et en particulier le package org.kickmyb.server.photo **[ici](https://github.com/departement-info-cem/KickMyB-Server/tree/main)**.
 
 :::
 
