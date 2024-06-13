@@ -64,25 +64,25 @@ Notice pour déployer sur Mac [ici](mac)
 | [3.2 →](cours/dio)                        | HTTP avec Dio                         | 50%                |
 | [4.1 →](cours/dio)                        | HTTP avec Dio                         | 75%                |
 | [4.2 →](cours/integration)                | Intégration                           | 100% remise        |
-| [5.1 →](cours/multilingue)                | Multilingue                           | TP2 : Images       |
-| [5.2 →](cours/deploiement)                | Déploiement                           | 10%                |
-| [6.1 →](cours/image-picker)               | Image Picker                          | 20%                |
-| [6.2 →](cours/image-cookie)               | Image Cookie                          | 35%                |
-| [7.1 →](cours/formatif-intra)             | Formatif                              | 35%                |
+| [5.1 →](cours/organisation)               | Organisation du code                  | TP2 : Images       |
+| [5.2 →](cours/multilingue)                | Multilingue                           | 10%                |
+| [6.1 →](cours/deploiement)                | Déploiement                           | 20%                |
+| [6.2 →](cours/image-picker)               | Image Picker                          | 30%                |
+| [7.1 →](cours/formatif-intra)             | Formatif                              | 30%                |
 | [7.2 →](cours/examen)                     | **Examen Intra**                      | --                 |
-| [8.1 →](cours/image-serveur)              | Image serveur                         | 60%                |
-| [8.2 →](cours/image-client)               | Image client                          | 80%                |
-| [9.1 →](cours/integration)                | Intégration                           | 100% remise        |
-| [9.2 →](cours/firebase-intro)             | Intro Firebase                        | TP3 : sans serveur |
-| [10.1 →](cours/firebase-authentification) | Firebase authentification             | 10%                |
-| [10.2 →](cours/firebase-datastore)        | Firebase datastore                    | 20%                |
-| [11.1 →](cours/firebase-access-control) | Firebase contrôle d'accès             | 30%                |
-| [11.2 →](cours/firebase-access-control) | Firebase contrôle d'accès             | 40%                |
-| [12.1 →](cours/firebase-storage)        | Firebase fichiers images              | 50%                |
-| [12.2 →](cours/firebase-stream)         | Firebase Stream                       | 60%                |
-| [13.1 →](cours/springboot-delete)                   | Spring Boot                           | 70%                |
-| [13.2 →](cours/springboot-delete)                   | Spring Boot                           | 80%                |
-| [14.1 →](cours/integration)             | Intégration                           | 90%                |
-| [14.2 →](cours/integration)             | Intégration                           | 100% remise        |
-| [15.1 →](cours/formatif-final)          | Formatif final                        |                    |
-| [15.2 →](cours/examen)                  | **Examen final**                      |                    |
+| [8.1 →](cours/image-cookie)               | Image Cookie                          | 40%                |
+| [8.2 →](cours/image-client)               | Image client                          | 60%                |
+| [9.1 →](cours/springboot-delete)          | Spring Boot                           | 70%                |
+| [9.2 →](cours/springboot-delete)          | Spring Boot                           | 80%                |
+| [10.1 →](cours/integration)               | Intégration                           | 100% remise        |
+| [10.2 →](cours/firebase-authentification) | Firebase authentification             | TP3 : sans serveur |
+| [11.1 →](cours/firebase-datastore)        | Firebase Firestore                    | 10%                |
+| [11.2 →](cours/firebase-access-control)   | Firebase contrôle d'accès             | 20%                |
+| [12.1 →](cours/firebase-access-control)   | Firebase contrôle d'accès             | 30%                |
+| [12.2 →](cours/firebase-storage)          | Firebase fichiers images              | 40%                |
+| [13.1 →](cours/firebase-stream)           | Firebase Stream                       | 50%                |
+| [13.2 →](cours/integration)               | Intégration                           | 70%                |
+| [14.1 →](cours/integration)               | Intégration                           | 90%                |
+| [14.2 →](cours/integration)               | Intégration                           | 100% remise        |
+| [15.1 →](cours/formatif-final)            | Formatif final                        | --                 |
+| [15.2 →](cours/examen)                    | **Examen final**                      | --                 |

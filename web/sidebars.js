@@ -46,23 +46,23 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.1 - Multilingue",
+      label: "5.1 - Organisation du code",
+      id: "cours/organisation",
+    },
+    {
+      type: "doc",
+      label: "5.2 - Multilingue",
       id: "cours/multilingue",
     },
     {
       type: "doc",
-      label: "5.2 - Déploiement",
+      label: "6.1 - Déploiement",
       id: "cours/deploiement",
     },
     {
       type: "doc",
-      label: "6.1 - Image Picker",
+      label: "6.2 - Image Picker",
       id: "cours/image-picker",
-    },
-    {
-      type: "doc",
-      label: "6.2 - Image Cookie",
-      id: "cours/image-cookie",
     },
     {
       type: "doc",
@@ -77,8 +77,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "8.1 - Image Serveur",
-      id: "cours/image-serveur",
+      label: "8.1 - Image Cookie",
+      id: "cours/image-cookie",
     },
     {
       type: "doc",
@@ -87,29 +87,29 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9.1 - Intégration",
+      label: "9.1 - Spring Boot",
+      id: "cours/springboot-delete",
+    },
+    {
+      type: "doc",
+      label: "9.2 - Spring Boot",
+      id: "cours/springboot-delete",
+    },
+    {
+      type: "doc",
+      label: "10.1 - Intégration",
       id: "cours/integration",
       className: "remise-tp2",
     },
     {
       type: "doc",
-      label: "9.2 - Intro Firebase",
-      id: "cours/firebase-intro",
-    },
-    {
-      type: "doc",
-      label: "10.1 - Authentification Firebase",
+      label: "10.2 - Authentification Firebase",
       id: "cours/firebase-authentification",
     },
     {
       type: "doc",
-      label: "10.2 - Datastore Firebase",
+      label: "11.1 - Firebase Firestore",
       id: "cours/firebase-datastore",
-    },
-    {
-      type: "doc",
-      label: "11.1 - Control d'accès Firebase",
-      id: "cours/firebase-access-control",
     },
     {
       type: "doc",
@@ -118,23 +118,23 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.1 - Stockage Firebase",
+      label: "12.1 - Control d'accès Firebase",
+      id: "cours/firebase-access-control",
+    },
+    {
+      type: "doc",
+      label: "12.2 - Stockage Firebase",
       id: "cours/firebase-storage",
     },
     {
       type: "doc",
-      label: "12.2 - Stream Firebase",
+      label: "13.1 - Stream Firebase",
       id: "cours/firebase-stream",
     },
     {
       type: "doc",
-      label: "13.1 - Spring Boot",
-      id: "cours/springboot-delete",
-    },
-    {
-      type: "doc",
-      label: "13.2 - Spring Boot",
-      id: "cours/springboot-delete",
+      label: "13.2 - Intégration",
+      id: "cours/integration",
     },
     {
       type: "doc",

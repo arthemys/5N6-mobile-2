@@ -14,9 +14,9 @@ hide_table_of_contents: true
 
 ### Multilingue
 
-Vous pouvez regarder la doc de Flutter en ligne sur l'internationalization [ici](https://flutter.dev/docs/development/accessibility-and-localization/internationalization).
+Nous vous recommendons d'utiliser le plugin Jetbrains [Flutter Intl](https://plugins.jetbrains.com/plugin/13666-flutter-intl), qui automatise une partie non négligeable du travail de traduction.
 
-Cependant, nous vous recommendons d'utiliser le plugin Jetbrains [Flutter Intl](https://plugins.jetbrains.com/plugin/13666-flutter-intl), qui automatise une partie non négligeable du travail de traduction.
+Cependant, vous pouvez regarder la doc de Flutter en ligne sur l'internationalization [ici](https://flutter.dev/docs/development/accessibility-and-localization/internationalization), si vous n'utilisez pas le plugin de Jetbrains.
 
 ### Portrait / Paysage
 
