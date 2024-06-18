@@ -97,7 +97,6 @@ Il faut vraiment faire un `flutter run`. Lancer l'application dans l'interface d
 :::
 
 - si vous avez un message d'erreur sur minSdk, il faut aller changer la valeur dans le fichier android>app>build.gradle
-- il va vous proposer d'activer multidex, dites oui
 - lancer l'application depuis votre IDE
 - FAIRE UN COMMIT
 - FAIRE UN PUSH
