@@ -1,10 +1,10 @@
 ---
-title: Intro Firebase
-description: Firebase - création de compte et d'application
+title: Organisation du code
+description: Organisation du code et extraires des widgets
 hide_table_of_contents: true
 ---
 
-# Firebase : introduction, mise en place
+# Organisation du code
 
 <Row>
 
@@ -12,17 +12,24 @@ hide_table_of_contents: true
 
 :::tip Avant la séance :
 
-Regardez la doc de [firebase](https://firebase.google.com/).
 
-Dans les séances suivantes, nous allons utiliser plusieurs produits de firebase:
+### Organisation du code
 
-- [Authentication](https://firebase.google.com/products/auth) : gestion de la connexion sur des comptes à nous ou des comptes Google etc.
-- [Cloud Firestore](https://firebase.google.com/products/firestore) : la "BD", avec une approche un peu différente de SQL
-- [Cloud Storage](https://firebase.google.com/products/storage) : le stockage de fichier, principalement pour nos images
+Nous vous suggérons cette organisation de fichiers et de dossiers
+![Organisation du code](_24-organisation/organisation.png)
 
-Finalement comme Flutter et Firebase sont 2 plateformes gérées par Google, elles sont assez bien intégrées.
 
-Pour la mise en place, vous devez suivre les étapes décrites [ici](notice-firebase).
+### Extraire des widgets
+
+En général, on dit comme règle qu'un méthode ne devrait pas faire plus d'un écran.
+Ainsi, si vous avez un widget qui a une méthode build() qui est plus grande qu'un écran, mieux vaut en extraire quelques widgets pour mieux organiser notre code.
+
+![Extraire un widget](_24-organisation/extract.png)
+
+### Public et privé
+
+En Dart, il n'y pas de mots clés pour `public` `private` et `protected`, on utilise plutôt le souligner `_` pour notre une variable privée à la librairie.
+
 
 :::
 
@@ -32,11 +39,11 @@ Pour la mise en place, vous devez suivre les étapes décrites [ici](notice-fire
 
 :::info Séance :
 
-On discutera de ce que veut dire serverless. C'est pas vraiment qu'il n'y a pas de serveur. C'est plutôt qu'on ne code pas le serveur explicitement.
+On discutera de comment structurer notre code efficacement. 
 
-On discutera du plan de match pour mon premier projet en firebase + flutter.
+On discutera des outils à notre disposition pour diviser nos widgets. Nous établirons également des règles générales pour diviser nos widgets et notre code.
 
-Le but est de mettre en place le projet aujourd'hui et de compléter la configuration.
+On discutera des variables publiques et privées en Dart.
 
 :::
 
