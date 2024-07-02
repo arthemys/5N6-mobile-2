@@ -28,8 +28,9 @@ Ainsi, si vous avez un widget qui a une méthode build() qui est plus grande qu'
 
 ### Public et privé
 
-En Dart, il n'y pas de mots clés pour `public` `private` et `protected`, on utilise plutôt le souligner `_` pour notre une variable privée à la librairie.
+En Dart, il n'y pas de mots clés pour `public` `private` et `protected`, on utilise plutôt le souligner `_` pour ajouter une variable privée à une librairie.
 
+De plus, en Dart tout fichier (plus ses `part`) est considéré comme une librairie.
 
 :::
 
@@ -53,8 +54,17 @@ On discutera des variables publiques et privées en Dart.
 
 :::note Exercices
 
-### Exercice test_flutter
+### Exercice organisation
 
-Il ne s'agit pas d'un exercice mais de créer le projet pour votre TP3. Suivez les instructions [ici](notice-firebase)
+Prendre le projet suivant: **[Code à organiser](_24-organisation/organisation.zip)**
+
+Extraire des widgets de la méthode build pour la rendre plus lisible.
+
+Vous devriez avoir au minimum
+- Un widget réutilisable pour afficher le drawer
+- Un widget réutilisable pour afficher un chat
+- Une méthode pour afficher la bannière du haut
+- Une méthode pour afficher le ListView
+
 
 :::
