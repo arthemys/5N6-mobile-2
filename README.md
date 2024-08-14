@@ -1,8 +1,8 @@
-# depinfo-modele
+# Bienvenue
 
-Modèle de base pour un cours du département d'informatique du CÉGEP Édouard-Montpetit. 
+Sur le repo du cours de programmation mobile avancée 5N6 du collège Edouard Montpetit. Le lien vers le site:
 
-L'objectif est de générer un site web pour un cours le plus simplement possible. Les pages de contenu sont écrites en Markdown.
+[https://info.cegepmontpetit.ca/5N6-mobile-2/](https://info.cegepmontpetit.ca/5N6-mobile-2/)
 
 Ce gabarit est simplement le projet de départ du produit [Docusaurus](https://docusaurus.io/) développé par l'équipe de Facebook, avec quelques configurations prédéfinies pour le département d'informatique du CÉGEP Édouard Montpetit. Nous vous encourageons fortement à aller jeter un coup d'oeil aux références ci-bas pour en apprendre davantage sur les possibilités qu'offre Docusaurus.
 
@@ -17,7 +17,9 @@ Ce gabarit est simplement le projet de départ du produit [Docusaurus](https://d
 7. Modifiez les documents Markdown qui sont dans la répertoire `docs` selon vos besoins.
 8. Profit
 
-## Installation
+## Installation (pour les profs)
+
+Commencer par cloner le repo localement. 
 
 ### Prérequis
 
@@ -36,11 +38,15 @@ $ cd web
 
 Si ce n'est pas déjà fait, installez les dépendances avec NPM.
 
+Installer les dépendances nécessaire. Depuis le dossier du projet web
+
 ```
 $ npm install
 ```
 
 Démarrez le serveur local.
+
+Exécuter le projet pour valider les modifications avant de commit. Depuis le dossier du projet web
 
 ```
 $ npm start
@@ -48,13 +54,16 @@ $ npm start
 
 Cette commande démarre une serveur de développement local sur le port `3000` de votre machine personnelle et ouvre un navigateur avec l'adresse locale du site. Les changements effectués sur la documentation (`/docs`) sont automatiquement appliqués sur le site à la sauvegarde des fichiers. Les changements faits à la configuration (ex: `docusaurus.config.js`) nécessitent un redémarrage du projet.
 
-## Déploiement
+## Déploiement (pour les profs)
 
 Tout le code poussé sur la branche `main` de ce dépôt est automatiquement déployée sur [https://info.cegepmontpetit.ca/nom-du-repo-github/](https://info.cegepmontpetit.ca/nom-du-repo-github/) à l'aide de Github Actions.
 
 ## Avancé
 
 Des composantes supplémentaires ont été développées par Pierre-Olivier Brillant. Vous pouvez vous référer à la section [Wiki](https://github.com/departement-info-cem/depinfo-gabarit/wiki) de ce repository, ou vous adresser directement à lui pour en savoir plus.
+
+Tout le code poussé sur la branche `main` de ce dépôt est automatiquement déployée sur [https://info.cegepmontpetit.ca/5N6-mobile-2/](https://info.cegepmontpetit.ca/5N6-mobile-2/) à l'aide de Github Pages et Github Actions.
+
 
 ## Références
 
