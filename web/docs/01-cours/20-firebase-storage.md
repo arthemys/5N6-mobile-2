@@ -1,6 +1,6 @@
 ---
 title: Stockage Firebase
-description: Firestore - contrôle d'accès et typage des données
+description: Firestore - gestion des images
 hide_table_of_contents: true
 ---
 

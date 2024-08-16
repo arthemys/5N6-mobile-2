@@ -81,7 +81,7 @@ Notice pour déployer sur Mac [ici](mac)
 | [12.1 →](cours/firebase-access-control)   | Firebase contrôle d'accès             | 30%                |
 | [12.2 →](cours/firebase-storage)          | Firebase fichiers images              | 40%                |
 | [13.1 →](cours/firebase-stream)           | Firebase Stream                       | 50%                |
-| [13.2 →](cours/integration)               | Intégration                           | 70%                |
+| [13.2 →](cours/firebase-rules)            | Firebase Règles d'accès               | 70%                |
 | [14.1 →](cours/integration)               | Intégration                           | 90%                |
 | [14.2 →](cours/integration)               | Intégration                           | 100% remise        |
 | [15.1 →](cours/formatif-final)            | Formatif final                        | --                 |

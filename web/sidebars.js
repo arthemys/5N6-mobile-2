@@ -133,8 +133,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.2 - Intégration",
-      id: "cours/integration",
+      label: "13.2 - Règles d'accès Firebase",
+      id: "cours/firebase-rules",
     },
     {
       type: "doc",
