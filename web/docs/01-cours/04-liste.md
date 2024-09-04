@@ -34,8 +34,6 @@ On expliquera le concept d'expression lambda qui est souvent utilisé pour décr
 
 Compléter les exercices
 
-Exécuter un exercice sur le simulateur de iOS. Exécuter un exercice sur un appareil iOS.
-
 :::
 
 </Column>
@@ -75,13 +73,5 @@ La liste doit être construite à l'aide d'une expression lambda.
 ### Exercice jolie_liste_builder
 
 Reprendre le dernier exercice, mais cette fois la liste doit être construite à l'aide d'un listview.builder.
-
-### Exercice mac_simulateur
-
-Prendre l'exercice de votre choix et l'exécuter dans le simulateur ios.
-
-### Exercice iphone_ipad
-
-Prendre l'exercice de votre choix et l'exécuter sur un appareil ios.
 
 :::
