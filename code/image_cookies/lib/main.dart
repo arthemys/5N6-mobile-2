@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:file_picker/file_picker.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:flutter/material.dart';
 
 import 'image_cookie.dart';
@@ -39,17 +39,15 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String imageURL = "";
   Cookie? cookie;
+  final picker = ImagePicker();
 
   void getImageAndSend() async {
-    FilePickerResult? result =
-        await FilePicker.platform.pickFiles(type: FileType.image);
+    final pickedImage = await picker.pickImage(source: ImageSource.gallery);
 
-    if (result != null) {
-      PlatformFile pickedImage = result.files.single;
+    if (pickedImage != null) {
 
       FormData formData = FormData.fromMap({
-        "file": await MultipartFile.fromFile(pickedImage.path!,
-            filename: pickedImage.name)
+        "file": await MultipartFile.fromFile(pickedImage.path, filename: pickedImage.name)
       });
 
       await SingletonDio.signUpAndGetCookie();
@@ -63,8 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       imageURL = "http://10.0.2.2:8080/api/singleFile/$id";
 
-      List<Cookie> cookies = await SingletonDio.cookiemanager.cookieJar
-          .loadForRequest(Uri.parse(imageURL));
+      List<Cookie> cookies = await SingletonDio.cookiemanager.cookieJar.loadForRequest(Uri.parse(imageURL));
       cookie = cookies.first;
 
       setState(() {});
