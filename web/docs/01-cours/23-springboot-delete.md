@@ -49,6 +49,7 @@ L'ajout de la suppression va demander de faire des modifications aux niveaux sui
 - Serveur Service :
   - ajouter au moins une méthode de service pour la suppression
   - voir si les autres doivent être modifiées
+  - Tester la méthode de service
 - Serveur Controller :
   - ajouter le point d'entrée pour la suppression, choisir l'URL, besoin de classes de transfert nouvelles (DTO)
   - voir si les autres <strong>"/api/**"</strong> doivent être modifiés
@@ -79,9 +80,6 @@ Vous devez essayer de maximiser votre capacité à travailler en parallèle pour
 - Contrôleur : je peux implanter un point d'entrée, valider son comportement avec POSTMAN, est-ce qu'il se déclenche, commenter l'appel à la méthode de service mais vérifier le reste
 - BD : je peux implanter le code mais je n'ai rien pour le déclencher .... FAUX, tu peux utiliser un test unitaire pour rapidement créer ton repo et voir si ton code fonctionne.
 - Service : je peux tester la logique de ma fonction avec un mock de la BD
-
-TODO prof : s'assurer qu'on a un exemple de test unitaire qui permet de tester la BD sur lequel ils peuvent se baser.
-TODO prof : s'assurer qu'on a un test avec un mock de la BD
 
 Pour chaque tâche, faites un code review à 2 pour valider quand c'est complété. Si le prof est dispo n'hésitez pas.
 
