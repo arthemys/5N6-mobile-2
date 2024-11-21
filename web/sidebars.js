@@ -128,7 +128,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.1 - Stockage Firebase/Supabase",
+      label: "13.1 - Stockage Firebase",
       id: "cours/firebase-storage",
     },
     {
@@ -138,8 +138,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.1 - Intégration",
-      id: "cours/integration",
+      label: "14.1 - Règles d'accès Firebase",
+      id: "cours/firebase-rules",
     },
     {
       type: "doc",
