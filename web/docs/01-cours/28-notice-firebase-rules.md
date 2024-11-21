@@ -2,7 +2,7 @@
 
 ### Règles de base à la création
 
-À la création de votre DB Firestore, vous avez des règles d'accès qui ressemble à ceci
+À la création de votre DB Firestore, vous avez des règles d'accès qui ressemblent à ceci
 ```js title="Version de Test"
 rules_version = '2';
 
@@ -42,7 +42,7 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // La règles s'applique pour toutes les villes de la collection
+    // La règles s'appliquent pour toutes les villes de la collection
     match /cities/{city} {
     	// Tout le monde peut lire les villes
       allow read: if true;
@@ -50,8 +50,8 @@ service cloud.firestore {
       allow write: if request.auth.uid == "MX0zbHawfhWThfVO8J1oOFtgkfH2"
     }
     
-    // La règles s'applique pour toutes les routes de la collection ou de toutes les sous-collections
-    // {document=**} est un wildchar qui permet d'appliquer la règles à tous les documents de façon récursive
+    // La règles s'appliquent pour toutes les routes de la collection ou de toutes les sous-collections
+    // {document=**} est un wildchar qui permet d'appliquer la règle à tous les documents de façon récursive
     match /cities/{city}/roads/{document=**} {
     	// Tout le monde peut lire et écrire
       allow read, write: if true;
@@ -143,7 +143,7 @@ service cloud.firestore {​​​​​​​​
     // {userid} crée un paramètre pour notre règle
     // Ça fonctionne un peu comme une route en ASP.Net
     match /users/{userid} {
-      // Seulement utilisateur lui-même peut avoir accès à ses données
+      // Seulement l'utilisateur lui-même peut avoir accès à ses données
       allow read, write: if request.auth !=null && request.auth.uid == userid
     }
 
@@ -178,7 +178,7 @@ rules_version = '2';
 service cloud.firestore {​​​​​​​​
   match /databases/{​​​​​​​​database}​​​​​​​​/documents {​​​​​​​​
 
-    // On crée un fonction pour valider que l'utilisateur connecté est un admin
+    // On crée une fonction pour valider que l'utilisateur connecté est un admin
     function isAdmin() {
     	return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin";
     }
