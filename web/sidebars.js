@@ -128,7 +128,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.1 - Stockage Firebase",
+      label: "13.1 - Stockage Firebase/Supabase",
       id: "cours/firebase-storage",
     },
     {

@@ -1,5 +1,5 @@
 ---
-title: Stockage Firebase
+title: Stockage Firebase/Supabase
 description: Firestore - contrôle d'accès et typage des données
 hide_table_of_contents: true
 ---
