@@ -17,11 +17,9 @@ Tu peux déjà commencer à regarder les vidéos du cours 1 et prendre connaissa
 
 À chaque cours, exécute ce **[script](https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1)** d'installation ([repo](https://github.com/departement-info-cem/scripts-mobile)). Pour le moment, le script est fait pour être uniquement exécuté sur les postes du CÉGEP.
 
-
 </Column>
 
 <Column>
-
 
 :::danger Plagiat
 
@@ -40,6 +38,7 @@ Pendant la séance, tu dois compléter et valider tes exercices, poser des quest
 :::
 
 :::info Installation à la maison
+
 - [Flutter](https://flutter.dev/)
 - [Flutter @ Youtube](https://www.youtube.com/c/flutterdev/videos)
 
@@ -49,13 +48,12 @@ Notice pour déployer sur Mac [ici](mac)
 
 :::
 
-
 </Column>
 
 </Row>
 
 | Semaine                                   | Séquence des cours                    | Travaux pratiques  |
-|-------------------------------------------|---------------------------------------|--------------------|
+| ----------------------------------------- | ------------------------------------- | ------------------ |
 | [1.1 →](cours/intro)                      | Plan de cours, premier projet Flutter | --                 |
 | [1.2 →](cours/layout)                     | Mise en page                          | --                 |
 | [2.1 →](cours/navigation)                 | Navigation                            | Projet créé        |
@@ -74,15 +72,15 @@ Notice pour déployer sur Mac [ici](mac)
 | [8.2 →](cours/image-client)               | Image client                          | 60%                |
 | [9.1 →](cours/springboot-delete)          | Spring Boot                           | 70%                |
 | [9.2 →](cours/springboot-delete)          | Spring Boot                           | 80%                |
-| [10.1 →](cours/integration)               | Intégration                           | 100% remise        |
-| [10.2 →](cours/firebase-authentification) | Firebase authentification             | TP3 : sans serveur |
-| [11.1 →](cours/firebase-datastore)        | Firebase Firestore                    | 10%                |
-| [11.2 →](cours/firebase-access-control)   | Firebase contrôle d'accès             | 20%                |
-| [12.1 →](cours/firebase-access-control)   | Firebase contrôle d'accès             | 30%                |
-| [12.2 →](cours/firebase-storage)          | Firebase fichiers images              | 40%                |
-| [13.1 →](cours/firebase-stream)           | Firebase Stream                       | 50%                |
-| [13.2 →](cours/firebase-rules)            | Firebase Règles d'accès               | 70%                |
-| [14.1 →](cours/integration)               | Intégration                           | 90%                |
+| [10.1 →](cours/gestion-etat)              | Gestion de l'état                     | 90%                |
+| [10.2 →](cours/integration)               | Intégration                           | 100% remise        |
+| [11.1 →](cours/firebase-authentification) | Firebase authentification             | TP3 : sans serveur |
+| [11.2 →](cours/firebase-datastore)        | Firebase Firestore                    | 10%                |
+| [12.1 →](cours/firebase-access-control)   | Firebase contrôle d'accès             | 20%                |
+| [12.2 →](cours/firebase-access-control)   | Firebase contrôle d'accès             | 30%                |
+| [13.1 →](cours/firebase-storage)          | Firebase fichiers images              | 40%                |
+| [13.2 →](cours/firebase-stream)           | Firebase Stream                       | 50%                |
+| [14.1 →](cours/integration)               | Intégration                           | 70%                |
 | [14.2 →](cours/integration)               | Intégration                           | 100% remise        |
 | [15.1 →](cours/formatif-final)            | Formatif final                        | --                 |
 | [15.2 →](cours/examen)                    | **Examen final**                      | --                 |

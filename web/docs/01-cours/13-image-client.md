@@ -42,13 +42,13 @@ On discutera du "caching" des images.
 
 ### Exercice grosse_image
 
-Utiliser l'URL [https://4n6.azurewebsites.net/exos/image](https://4n6.azurewebsites.net/exos/image) pour afficher au moins 20 images dans un ListView
+Utiliser l'URL [https://fourn6-mobile-prof.onrender.com/exos/image](https://fourn6-mobile-prof.onrender.com/exos/image) pour afficher au moins 20 images dans un ListView
 
 Ajouter un paramètre à l'URL pour s'assurer que chaque image ne provient pas du cache, ça devrait rendre le tout désagréable à l'utilisation puisque l'image fait 10.5 mb
 
 ### Exercice redimensionnement
 
-Faire 3 pages où vous n'aurez qu'à afficher l'image [https://4n6.azurewebsites.net/exos/image](https://4n6.azurewebsites.net/exos/image) avec la taille la plus grande possible.
+Faire 3 pages où vous n'aurez qu'à afficher l'image [https://fourn6-mobile-prof.onrender.com/exos/image](https://fourn6-mobile-prof.onrender.com/exos/image) avec la taille la plus grande possible.
 
 - La première page affichera l'image en basse résolution.
 - La deuxième page affichera l'image en moyenne résolution.
@@ -58,7 +58,7 @@ Faire 3 pages où vous n'aurez qu'à afficher l'image [https://4n6.azurewebsites
 
 Faire 2 pages.
 
-- La première affichera l'image [https://4n6.azurewebsites.net/exos/image](https://4n6.azurewebsites.net/exos/image) le 1/3 de la largeur de l'écran
+- La première affichera l'image [https://fourn6-mobile-prof.onrender.com/exos/image](https://fourn6-mobile-prof.onrender.com/exos/image) le 1/3 de la largeur de l'écran
 - La deuxième page affichera une image sur la moitié de la hauteur et la moitié de la largeur.
 
 Pour vous aider, regarder la propriété BoxFit.

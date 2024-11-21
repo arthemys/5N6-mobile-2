@@ -16,19 +16,24 @@ Regardez la doc de [firebase](https://firebase.google.com/).
 
 Dans les séances suivantes, nous allons utiliser plusieurs produits de firebase:
 
-- [Authentication](https://firebase.google.com/products/auth) : gestion de la connexion sur des comptes à nous ou des comptes Google etc.
 - [Cloud Firestore](https://firebase.google.com/products/firestore) : la "BD", avec une approche un peu différente de SQL
 - [Cloud Storage](https://firebase.google.com/products/storage) : le stockage de fichier, principalement pour nos images
 
 Finalement comme Flutter et Firebase sont 2 plateformes gérées par Google, elles sont assez bien intégrées.
 
-Pour la mise en place de Firebase, vous devez suivre les étapes décrites [ici](notice-firebase).
+### Étape 1 - Créer un projet Firebase
 
-Regardez la doc de [firebase authentication](https://firebase.google.com/docs/auth/flutter/start). Nous vous recommandons d'y passer un maximum de 20 minutes. Il faut lire un peu, coder puis relire en profondeur que de lire de la doc 4 heures sans coder.
+Pour la mise en place de Firebase, vous devez suivre les étapes décrites **[ici (Configuration de Firebase)](notice-firebase)**.
 
-Dans le projet, nous allons utiliser la connexion avec des comptes Google. On va suivre les indications **[ici](notice-firebase-auth)**
+### Étape 2 - Ajouter l'authentification
+Regardez la doc de [firebase authentification](https://firebase.google.com/docs/auth/flutter/start). Nous vous recommandons d'y passer un maximum de 20 minutes. Il faut lire un peu, coder puis relire en profondeur que de lire de la doc 4 heures sans coder.
+
+Dans le projet, nous allons utiliser la connexion avec des comptes Google. On va suivre les indications **[ici (Firebase Authentification)](notice-firebase-auth)**
 
 ATTENTION, les étapes **[spécifiques à Android](notice-firebase-auth#configuration-google_sign_in-pour-android)** sont à répéter pour chaque nouveau poste de travail.
+
+### Étape 3 - Ajouter l'authentification par mot de passe
+L'authentification par mot de passe est très similaire à l'authentification par par google_sign_in, vous pouvez regarder la **[documentation officielle](https://firebase.google.com/docs/auth/flutter/password-auth)**
 
 :::
 

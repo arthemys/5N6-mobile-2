@@ -1,11 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-import { themes } from 'prism-react-renderer';
+import { themes } from "prism-react-renderer";
 
 const siteConfig = require("./config");
 
-const lightCodeTheme = themes.vsLight
-const darkCodeTheme = themes.vsDark
+const lightCodeTheme = themes.vsLight;
+const darkCodeTheme = themes.vsDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,10 +28,10 @@ const config = {
   },
 
   markdown: {
-    mermaid: true
+    mermaid: true,
   },
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
     [
@@ -92,6 +92,11 @@ const config = {
           {
             label: "Scripts Installation",
             href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
+            position: "right",
+          },
+          {
+            label: "Installator 🆕",
+            href: `https://github.com/departement-info-cem/scripts-mobile/releases/download/Script/ScriptSharp.exe`,
             position: "right",
           },
         ],

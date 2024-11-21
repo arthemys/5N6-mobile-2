@@ -97,24 +97,24 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "10.1 - Intégration",
+      label: "10.1 - Gestion de l'état",
+      id: "cours/gestion-etat",
+    },
+    {
+      type: "doc",
+      label: "10.2 - Intégration",
       id: "cours/integration",
       className: "remise-tp2",
     },
     {
       type: "doc",
-      label: "10.2 - Authentification Firebase",
+      label: "11.1 - Authentification Firebase",
       id: "cours/firebase-authentification",
     },
     {
       type: "doc",
-      label: "11.1 - Firebase Firestore",
+      label: "11.2 - Firebase Firestore",
       id: "cours/firebase-datastore",
-    },
-    {
-      type: "doc",
-      label: "11.2 - Control d'accès Firebase",
-      id: "cours/firebase-access-control",
     },
     {
       type: "doc",
@@ -123,18 +123,18 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.2 - Stockage Firebase",
+      label: "12.2 - Control d'accès Firebase",
+      id: "cours/firebase-access-control",
+    },
+    {
+      type: "doc",
+      label: "13.1 - Stockage Firebase/Supabase",
       id: "cours/firebase-storage",
     },
     {
       type: "doc",
-      label: "13.1 - Stream Firebase",
+      label: "13.2 - Stream Firebase",
       id: "cours/firebase-stream",
-    },
-    {
-      type: "doc",
-      label: "13.2 - Règles d'accès Firebase",
-      id: "cours/firebase-rules",
     },
     {
       type: "doc",
