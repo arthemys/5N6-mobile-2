@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="page du cours programmation mobile">
+    <meta name="author" content="Département informatique, collège Édouard Montpetit">
+    <title>Mobile : Final A23</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="#"><strong>Mobile avancé</strong> Examen Final A23</a> </div>
+            <div class="navbar-collapse collapse navbar-right">
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12"> 
+                <p>
+                    <strong>Documentation autorisée</strong>:
+                    Tout ce que vous avez produit pendant le cours, ainsi que les repository utilisés et présentés pendant le cours.
+                </p>
+                <p>
+                    <strong>Durée</strong>:
+                    Vous avez <span class="label label-primary">2</span> heures pour compléter l'examen. Plus si vous avez le droit
+                    à du temps supplémentaire.
+                </p>
+            </div>
+
+
+            <div class="col-xs-6 ">
+                <h3>Firestore</h3>
+                <p>
+                    Créé un projet nommé <strong>exo_firestore_<em>nomdefamille</em></strong>. Le projet est connecté à un projet firebase.
+                </p>
+                <p>
+                    <b>Note : </b> à l'examen, un projet de départ où la connexion à un firebase vous sera fourni pour gagner du temps.
+                </p>
+                <p>
+                    On veut un bouton au milieu de l'application qui déclenchera l'ajout d'un document dans le firestore.
+                    Il y a un champ texte sous le bouton qui permettra de fournir le contenu à sauvegarder.
+                </p>
+                <p>
+                    <span class="label label-danger">1 point</span>
+                    A l'appui sur le bouton, vous devez créer un document.
+                </p>
+                <p>
+                    <span class="label label-danger">1 point</span>
+                    Le document doit se trouver précisément dans: la collection <strong>"Examens"</strong> > le document dont l'ID est <strong>"FinalA23"</strong> > la collection <strong>"Eleves"</strong>.
+                    L'ID de votre document doit être généré automatiquement par Firestore.
+                </p>
+
+
+                Le document doit contenir <strong>EXACTEMENT</strong> les champs suivants:
+                <ul>
+                    <li><span class="label label-danger">1 point</span> "contenu" de type String avec le contenu du champ texte</li>
+                    <li><span class="label label-danger">1 point</span> "numeroDePoste" de type entier avec les 2 derniers chiffres du nom de ton poste </li>
+                    <li><span class="label label-danger">1 point</span> "suisSurUneTableHaute" de type booléen qui indique si vous êtes sur un table haute</li>
+                </ul>
+
+                <br>
+                <br>
+                <h3>HTTP JSON et erreurs</h3>
+                <p>
+                    Dans un dossier séparé <strong>exo_erreurs</strong>, vous devez programmer une interface avec 1 champ de saisie et un bouton.
+                </p>
+                <p>
+                    Le serveur déployé : <pre>https://examen-final-h23.azurewebsites.net/Exam2023/{nombre}</pre>
+                Exemple d'usage : <pre>https://examen-final-h23.azurewebsites.net/Exam2023/42</pre>
+
+                Le but du jeu est de trouver le nombre mystère :
+                <ul>
+                    <li>Si le nombre est trop petit, vous recevrez un message d'erreur (code 400).</li>
+                    <li>Si le nombre est trop grand, vous recevrez un autre message d'erreur (code 400).</li>
+                    <li>Si le nombre est invalide, vous recevrez un message d'erreur (code 404).</li>
+                    <li>Si vous entrez le bon nombre, vous recevrez un message de succès (code 200)</li>
+                </ul>
+                </p>
+
+                <ul>
+                    <li><span class="label label-danger">1 point</span>
+                        L'appui sur le bouton envoi une requête GET à l'URL du serveur déployé.
+                        Remplacez {nombre} par le contenu du champ texte.
+                    </li>
+                    </li>
+                    <li><span class="label label-danger">1 point</span>
+                        Si tout se passe bien (aucune erreur) affichez un SnackBar indiquant le message renvoyé.
+                    </li>
+                    <li><span class="label label-danger">1 point</span>
+                        Si le web service renvoit une erreur, affichez un SnackBar indiquant le message d'erreur renvoyé.
+                    </li>
+                    <li><span class="label label-danger">1 point</span>
+                        Vous affichez un message d'erreur clair dans le cas où le serveur indique que vous n'avez pas envoyé un entier valide.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xs-6 "> 
+                <h3>Traduction</h3>
+                Dans un projet séparé dans un dossier <strong>exo_traduction</strong>.
+                <p>
+                    <span class="label label-danger">1 point</span>
+                    L'image à l'adresse "https://fourn6-mobile-prof.onrender.com/exos/image"
+                    est affichée en pleine largeur.
+                </p>
+                <p>
+                    <span class="label label-danger">1 point</span>
+                    On trouve 2 boutons Oui et Non qui prennent chacun la moitié de la largeur largeur.
+                </p>
+                <p>
+                    <span class="label label-danger">1 point</span>
+                    On trouve une liste avec les mois de l'année, chaque mois a un bouton pour le supprimer
+                    (qui ne fait rien).
+                </p>
+                <p>
+                    <span class="label label-danger">1 point</span>
+                    L'interface est traduite en français et en anglais pour le titre et les boutons.
+                </p>
+                <p>
+                    <span class="label label-danger">1 point</span>
+                    L'interface est traduite en français et en anglais pour la liste.
+                </p>
+				<a href="final2023_files/en.png"><img src="final2023_files/en.png" class=" col-xs-6"/> </a>
+                <a href="final2023_files/fr.png"><img src="final2023_files/fr.png" class=" col-xs-6"/> </a>
+            </div>
+
+            <div class="col-xs-6 ">
+
+            </div>
+            <div class="col-xs-6 ">
+                <h3>Question à développement</h3>
+                <p>
+                    <span class="label label-danger">1 point</span> <span class="label label-info">Entre 2 et 4 lignes</span>
+                    <br/>
+                    <br/>
+                    <b>Décrivez ce qu'est un Cookie, et dans quel contexte est-ce qu'on s'en sert?</b>
+                    <br/>
+                    <br/>
+                    ___________________________________________________________________________
+                    <br/>
+                    <br/>
+                    ___________________________________________________________________________
+                    <br/>
+                    <br/>
+                    ___________________________________________________________________________
+                    <br/>
+                    <br/>
+                    ___________________________________________________________________________
+                    <br/>
+                    <br/>
+                </p>
+
+<!--                <p>-->
+<!--                    <span class="label label-danger">1 point</span> <span class="label label-info">Entre 2 et 4 lignes</span>-->
+<!--                    <br/>-->
+<!--                    <br/>-->
+<!--                    <b>Qu'est ce que sont les en-têtes http? Donne 2 exemples d’en-têtes HTTP.</b>-->
+<!--                    <br/>-->
+<!--                    <br/>-->
+<!--                    ___________________________________________________________________________-->
+<!--                    <br/>-->
+<!--                    <br/>-->
+<!--                    ___________________________________________________________________________-->
+<!--                    <br/>-->
+<!--                    <br/>-->
+<!--                    ___________________________________________________________________________-->
+<!--                    <br/>-->
+<!--                    <br/>-->
+<!--                    ___________________________________________________________________________-->
+<!--                    <br/>-->
+<!--                    <br/>-->
+<!--                </p>-->
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
