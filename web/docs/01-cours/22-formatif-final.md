@@ -6,6 +6,12 @@ hide_table_of_contents: true
 
 # Formatif Final
 
+## Final Automne 2023
+
+ATTENTION : le projet firebase du premier exercice pourrait ne plus être fonctionnel
+
+Lien ici [Final 2023](pathname:///file/final2023)
+
 ## Final Automne 2022
 
 ATTENTION : le projet firebase du premier exercice pourrait ne plus être fonctionnel
