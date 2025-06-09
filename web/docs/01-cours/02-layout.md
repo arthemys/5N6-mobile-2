@@ -12,11 +12,11 @@ hide_table_of_contents: true
 
 :::tip Avant la séance :
 
-Vous pouvez regarder la doc de Flutter en ligne sur la mise en page [ici](https://flutter.dev/docs/development/ui/layout)
+Vous pouvez regarder la doc de Flutter en ligne sur la mise en page [ici](https://flutter.dev/docs/development/ui/layout).
 
 Vous devrez étudier l'exemple de code suivant sur la **[mise en page en taille fixe](https://github.com/departement-info-cem/5N6-mobile-2/tree/main/code/mise_en_page)**. Cherchez les TODOs pour les explications. Dans IntelliJ **View** > **Tool Windows** > **TODO**.
 
-Vous regarderez l'exemple suivant de mise en **[page en scroll](https://github.com/departement-info-cem/5N6-mobile-2/tree/main/code/double_scroll)**
+Vous regarderez l'exemple suivant de mise en **[page en scroll](https://github.com/departement-info-cem/5N6-mobile-2/tree/main/code/double_scroll)**.
 
 :::
 
@@ -67,7 +67,7 @@ Vous devez reproduire la mise en page de l'image suivante dans une appli Flutter
 
 Le bloc rouge doit faire 200 de haut et prendre les 2/3 de l'écran. Le bouton du bas doit être en bas.
 
-Indice, vous allez surement mettre des Row dans des Column dans des Row dans des Column
+Indice, vous allez surement mettre des Row dans des Column dans des Row dans des Column.
 
 </Column>
 
