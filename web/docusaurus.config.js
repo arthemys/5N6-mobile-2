@@ -90,12 +90,7 @@ const config = {
             label: "Installation Mac",
           },
           {
-            label: "Scripts Installation",
-            href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
-            position: "right",
-          },
-          {
-            label: "Installator 🆕",
+            label: "Installator",
             href: `https://github.com/departement-info-cem/scripts-mobile/releases/download/Script/ScriptSharp.exe`,
             position: "right",
           },
